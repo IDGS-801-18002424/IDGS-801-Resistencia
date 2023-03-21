@@ -1,0 +1,6 @@
+#Archivo que almacena las traducciones para el programa de traduccion
+español,spanish
+bomba,bomb
+libro,book
+palabra,word
+nuevo,new

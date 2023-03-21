@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            {% from "_macros.html" import alum_Field %}
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="matricula"></label>
+                    {{alum_Field(form.matricula, class='form-control')}}
+                </div>
+                <div class="form-group">
+                    <label for="nombre"></label>
+                    {{alum_Field(form.nombre, class='form-control')}}
+                </div>
+                <div class="form-group">
+                    <label for="apaterno"></label>
+                    {{alum_Field(form.apaterno, class='form-control')}}
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    {{alum_Field(form.email, class='form-control')}}
+                </div>
+
+                <div class="form-group">
+                    <input type="button" value="Registrar" id="al" name="al">
+                </div>
+
+                <!-- {{alum_Field(form.nombre, class='form-control')}}
+                {{alum_Field(form.apaterno, class='form-control')}}
+                {{alum_Field(form.email, class='form-control')}} -->                
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <h1>Matricula : {{mat}}</h1>
+                <h1 class="mt-3">Nombre : {{nom}}</h1>
+                <h1></h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
